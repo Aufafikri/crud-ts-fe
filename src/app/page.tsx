@@ -17,7 +17,7 @@ import EditModal from "@/components/Popups/EditModal";
 import CreateModal from "@/components/Popups/CreateModal"
 import { useFetchProducts, useCreateProduct, useDeleteProduct, useEditProduct } from "@/features";
 
-const page = () => {
+const Page = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false)
   const [createModalOpen, setCreateModalOpen] = useState<boolean>(false)
   const [selectedProducts, setSelectedProducts] = useState<Products | null>(null)
@@ -108,4 +108,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
